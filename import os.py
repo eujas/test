@@ -1,8 +1,9 @@
 import os
+import sys
 print("this is debian based os only")
 if input("Continue (Y/N)") != "Y":
     print("Aborted.")
-    exit(1)
+    sys.exit(1)
 os.system('apt install -y neofetch') 
 os.system('neofetch')
 print("here is your distro")
